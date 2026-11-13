@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Smart Parking</title>
+    
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: auto;
+            width: 95vw;
+        }
+
+        td {
+            width: calc(95vw / 16);
+            height: 30px;
+            border: 2px solid black;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Smart Parking</h1>
+    <p>Total Spaces: <span id="total"></span> Occupied Spaces: <span id="occupied"></span> Available Spaces: <span id="available"></span> Occupancy Rate: <span id="occupancy"></span>%</p>
+    <p>
+        <span style="color:#0f970f;">Available</span>
+        <span style="color:#FF0000">Occupied</span>
+        <span style="color:#787878;">Road</span>
+    </p>
+    <table id="parkingLot"></table>
+
+    <script src="script.js"></script>
+    <p id="lastUpdated">Last updated: <span id="updated"></span></p>
+
+</body>
+</html>
